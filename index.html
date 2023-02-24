@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>miserablepile.com</title>
+<meta property="og:title" content="miserablepile.com" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://miserablepile.com/" />
+<meta property="og:url" content="http://miserablepile.com/" />
+<meta property="og:site_name" content="miserablepile.com" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="miserablepile.com" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"miserablepile.com","name":"miserablepile.com","url":"http://miserablepile.com/"}</script>
+<!-- End Jekyll SEO tag -->
+<script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
+<script type='text/javascript'>
+  // lol
+  window.addEventListener('load', function () {
+    let _midistartstop = false;
+    function midiStartStop () {
+      _midistartstop = !_midistartstop;
+      if (_midistartstop == true) {
+        console.log('play');
+        MIDIjs.play('into-the-dungeon.mid');
+      } else {
+        console.log('stop');
+        MIDIjs.stop();
+      }
+      return false;
+    }
+
+    document.getElementById('midiStartStop').addEventListener(
+      'click',
+      function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        midiStartStop();
+      }
+    )
+  });
+
+</script>
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://miserablepile.com/">miserablepile.com</a></h1>
+      
+
+      <p><a href="#" id="midiStartStop">
+  <img src="dracula.png" />
+ </a></p>
+
+<ul>
+  <li><a href="https://gist.github.com/chitchcock/1281611">Stevey’s Google Platforms Rant</a></li>
+  <li><a href="https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/">Notes on Distributed Systems for Young Bloods</a></li>
+</ul>
+
+<!-- <script type="text/javascript" src="//www.midijs.net/lib/midi.js"></script>-->
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
+
